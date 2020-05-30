@@ -52,6 +52,5 @@ public class SimpleChatServer {
             port = 8080;
         }
         new SimpleChatServer(port).run();
-
     }
 }
