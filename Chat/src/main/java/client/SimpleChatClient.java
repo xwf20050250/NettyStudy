@@ -10,19 +10,19 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class SimpleChatClient {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         new SimpleChatClient("localhost", 8080).run();
     }
 
     private final String host;
     private final int port;
 
-    public SimpleChatClient(String host, int port){
+    public SimpleChatClient(String host, int port) {
         this.host = host;
         this.port = port;
     }
 
-    public void run() throws Exception{
+    public void run() throws Exception {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
             Bootstrap bootstrap  = new Bootstrap()
